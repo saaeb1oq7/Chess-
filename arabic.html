@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♜ شطرنج مونتبيت · ملاحظات</title>
+    <!-- نفس ملف style.css مع تعديلات بسيطة للـ RTL -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* تعديلات للعربية - RTL */
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Tahoma', 'Arial', sans-serif;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            gap: 12px;
+        }
+        
+        h2::before {
+            content: "♟️";
+            margin-left: 0.5rem;
+            margin-right: 0;
+        }
+        
+        h3 {
+            border-left: none;
+            border-right: 6px solid #b28241;
+            padding-left: 0;
+            padding-right: 0.8rem;
+        }
+        
+        section {
+            border-left: none;
+            border-right: 8px solid #7d5d42;
+        }
+        
+        .goal {
+            border-left: none;
+            border-right: 5px solid #5f4a33;
+        }
+        
+        .notation-item {
+            flex-direction: row-reverse;
+        }
+        
+        .notation-symbol {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
+        .writer {
+            text-align: left;
+        }
+        
+        .writer span {
+            display: inline-block;
+        }
+        
+        /* تعديل القوائم للنقاط */
+        ul, ol {
+            padding-right: 2rem;
+            padding-left: 0;
+        }
+        
+        /* شريط تبديل اللغة */
+        .lang-switch {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            background: #bc8f4b;
+            color: #1f2b2b;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #eddbbf;
+            z-index: 10;
+            transition: all 0.3s;
+        }
+        
+        .lang-switch:hover {
+            background: #eddbbf;
+            color: #1f2b2b;
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        @media (max-width: 650px) {
+            .lang-switch {
+                left: 1rem;
+                top: 0.5rem;
+                font-size: 0.9rem;
+            }
+            header h1 {
+                font-size: 1.8rem;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <!-- رابط تبديل اللغة للإنجليزية (العودة للأصل) -->
+            <a href="index.html" class="lang-switch">English</a>
+            <h1>♛ شطرنج مونتبيت <span>♚</span></h1>
+            <div class="sub">ملاحظات مكتوبة بخط اليد · دروس مجمعة</div>
+        </header>
+
+        <main>
+            <!-- الأساسيات (الصورة 1) -->
+            <section>
+                <h2>♙ الأساسيات</h2>
+                <ul class="bullet-list compact-list">
+                    <li><strong>١.</strong> طور القطع مبكراً وقم بالتبييت.</li>
+                    <li><strong>٢.</strong> لا تحرك البيادق غير الضرورية في الافتتاحية.</li>
+                    <li><strong>٣.</strong> حاول تحريك الأحصنة قبل الفيلة.</li>
+                    <li><strong>٤.</strong> لا تقل "كش" أو "check" إذا كان الخصم يمكنه الدفاع بسهولة.</li>
+                    <li><strong>٥.</strong> لا تحرك نفس القطعة مرتين في الافتتاحية إلا إذا لزم الأمر.</li>
+                    <li><strong>٦.</strong> لا تفتح الموقف إذا كنت متأخراً في التطوير.</li>
+                    <li><strong>٧.</strong> ضع الوزير خلف البيادق. أفضل مكان للوزير هو الصف الثاني (للأبيض).</li>
+                    <li><strong>٨.</strong> التبييت جهة الملك أفضل لأنه يحمي البيادق.</li>
+                    <li><strong>٩.</strong> لا تبادل القطع إذا كانت قطعك متطورة وقطع الخصم غير متطورة.</li>
+                    <li><strong>١٠.</strong> حاول منع خصمك من التبييت.</li>
+                </ul>
+            </section>
+
+            <!-- مبادئ استراتيجية وتكتيكية (الصورة 2) -->
+            <section>
+                <h2>♖ استراتيجيات وتكتيكات</h2>
+                <ul class="bullet-list">
+                    <li><strong>١)</strong> سيطر على المربعات المركزية (e4, d5, d4, d3). <em>حاول وضع البيادق على d5 و e4.</em></li>
+                    <li><strong>١٢)</strong> <strong>قم بالمبادلة في هذه الحالات:</strong>
+                        <ul style="margin-top: 0.3rem; list-style-type: circle;">
+                            <li>المواقف المعقدة</li>
+                            <li>وضعية مواد أفضل</li>
+                            <li>تدمير بنية البيادق للخصم</li>
+                        </ul>
+                    </li>
+                    <li><strong>أفضل صف للهجوم هو الصف السابع</strong> (للأبيض).</li>
+                    <li>في نهاية اللعبة، ضع بيادقك على نفس لون مربعات فيلك. إذا لم تفعل، سيضع خصمك بيادقه على المربعات المعاكسة.</li>
+                    <li>في حالات نادرة قد تحتاج الترقية إلى حصان.</li>
+                    <li>الفيل أفضل في المواقف المفتوحة – الحصان أفضل في المواقف المغلقة.</li>
+                    <li>فيلان أفضل من حصان وفيل.</li>
+                    <li><strong>احمِ الصف الأخير جيداً.</strong></li>
+                    <li>تجنب دفع البيادق أمام الملك التي تحمي الملك.</li>
+                    <li>اهجم دائماً على نقاط ضعف الخصم وحاول خلق نقاط ضعف جديدة.</li>
+                </ul>
+                <div class="footnote">
+                    ♟️ تكرار التأكيد: "حاول وضع البيادق على d5 و e4" – السيطرة على المركز.
+                </div>
+            </section>
+
+            <!-- الافتتاحيات (الصورة 3 وافتتاحية سلاف من الصورة 4) -->
+            <section>
+                <h2>♞ الافتتاحيات (خطوط شائعة)</h2>
+
+                <article>
+                    <h3>🇮🇹 الافتتاحية الإيطالية</h3>
+                    <div class="moves">1.e4 e5  2.Nf3 Nc6  3.Bc4</div>
+                    <div class="goal">🎯 السيطرة على المركز، تطوير الحصان والفيل على مربعات قوية، والتبييت.</div>
+                </article>
+
+                <article>
+                    <h3>🇪🇸 روي لوبيز</h3>
+                    <div class="moves">1.e4 e5  2.Nf3 Nc6  3.Bb5</div>
+                    <div class="goal">🎯 السيطرة على المركز، تطوير الحصان، مهاجمة الحصان على c6 بالفيل.</div>
+                </article>
+
+                <article>
+                    <h3>🇮🇹 الدفاع الصقلي</h3>
+                    <div class="moves">1.e4 c5  2.Nf3 d6  3.d4 cxd4</div>
+                    <div class="goal">🎯 الأبيض يحصل على مساحة في المركز، لكن الأسود يستفيد بمبادلة بيدق مركزي ببيدق جانبي.</div>
+                </article>
+
+                <article>
+                    <h3>🇫🇷 الدفاع الفرنسي</h3>
+                    <div class="moves">1.e4 e6  2.d4 d5</div>
+                    <div class="goal">🎯 افتتاحية استراتيجية؛ العيب الوحيد هو صعوبة تطوير الفيل على c8.</div>
+                </article>
+
+                <article>
+                    <h3>🇸🇱 الدفاع السلافي</h3>
+                    <div class="moves">1.d4 d5  2.c4 c6</div>
+                    <div class="goal">🎯 يدافع عن البيدق على d5. الأسود يتطور لكن يحصل على مساحة أقل؛ الحصان على c8 يصعب تطويره.</div>
+                </article>
+            </section>
+
+            <!-- الرموز والتدوين (الصورة 4) -->
+            <section>
+                <h2>📝 الرموز · التدوين</h2>
+                <div class="notation-grid">
+                    <div class="notation-item"><span>الملك</span> <span class="notation-symbol">K</span></div>
+                    <div class="notation-item"><span>الوزير</span> <span class="notation-symbol">Q</span></div>
+                    <div class="notation-item"><span>الرخ</span> <span class="notation-symbol">R</span></div>
+                    <div class="notation-item"><span>الحصان</span> <span class="notation-symbol">N</span></div>
+                    <div class="notation-item"><span>الفيل</span> <span class="notation-symbol">B</span></div>
+                    <div class="notation-item"><span>أسر</span> <span class="notation-symbol">×</span></div>
+                    <div class="notation-item"><span>كش</span> <span class="notation-symbol">+</span></div>
+                    <div class="notation-item"><span>كش مزدوج</span> <span class="notation-symbol">++</span></div>
+                    <div class="notation-item"><span>كش مات</span> <span class="notation-symbol">#</span></div>
+                    <div class="notation-item"><span>تبييت جهة الوزير</span> <span class="notation-symbol">0-0-0</span></div>
+                    <div class="notation-item"><span>تبييت جهة الملك</span> <span class="notation-symbol">0-0</span></div>
+                    <div class="notation-item"><span>نقلة ممتازة</span> <span class="notation-symbol">!</span></div>
+                    <div class="notation-item"><span>نقلة رائعة</span> <span class="notation-symbol">!!</span></div>
+                    <div class="notation-item"><span>نقلة ضعيفة</span> <span class="notation-symbol">?</span></div>
+                    <div class="notation-item"><span>نقلة سيئة</span> <span class="notation-symbol">!?</span></div>
+                    <div class="notation-item"><span>خطأ فادح</span> <span class="notation-symbol">??</span></div>
+                </div>
+
+                <!-- تفاصيل إضافية من قسم الحركات -->
+                <ul style="margin-top: 1.2rem; background: #f1e8da; padding: 1rem 2rem; border-radius: 20px;">
+                    <li><strong>تبييت جهة الوزير</strong> = 0-0-0 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>تبييت جهة الملك</strong> = 0-0</li>
+                    <li><strong>نقلة ممتازة !</strong> · <strong>نقلة رائعة !!</strong> · <strong>ضعيفة ?</strong> · <strong>سيئة !?</strong> · <strong>خطأ فادح ??</strong></li>
+                    <li>كش + · كش مزدوج ++ · كش مات #</li>
+                </ul>
+            </section>
+
+            <!-- اسم الكاتب -->
+            <div class="writer">
+                <span>✍️ نائب عبدالکریم</span>
+            </div>
+
+            <hr>
+            <div style="text-align: center; opacity: 0.7; padding: 0.5rem; font-size: 0.95rem;">
+                ♜ من أوراق مونتبيت الأصلية · ملاحظات مجمعة بـ ❤️
+            </div>
+        </main>
+    </div>
+</body>
+</html>
