@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>♜ شطرنج مونتبيت · ملاحظات</title>
-    <!-- نفس ملف style.css مع تعديلات بسيطة للـ RTL -->
     <link rel="stylesheet" href="style.css">
     <style>
-        /* تعديلات للعربية - RTL */
         body {
             font-family: 'Segoe UI', 'Roboto', 'Tahoma', 'Arial', sans-serif;
         }
@@ -60,26 +58,24 @@
             display: inline-block;
         }
         
-        /* تعديل القوائم للنقاط */
         ul, ol {
             padding-right: 2rem;
             padding-left: 0;
         }
         
-        /* شريط تبديل اللغة */
         .lang-switch {
-            position: absolute;
-            top: 1rem;
-            left: 2rem;
             background: #bc8f4b;
             color: #1f2b2b;
-            padding: 0.5rem 1rem;
-            border-radius: 30px;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.3rem;
             border: 2px solid #eddbbf;
-            z-index: 10;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            display: inline-block;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         
         .lang-switch:hover {
@@ -107,14 +103,12 @@
 <body>
     <div class="page">
         <header>
-            <!-- رابط تبديل اللغة للإنجليزية (العودة للأصل) -->
-            <a href="index.html" class="lang-switch">English</a>
             <h1>♛ شطرنج مونتبيت <span>♚</span></h1>
             <div class="sub">ملاحظات مكتوبة بخط اليد · دروس مجمعة</div>
+            <a href="index.html" class="lang-switch">English</a>
         </header>
 
         <main>
-            <!-- الأساسيات (الصورة 1) -->
             <section>
                 <h2>♙ الأساسيات</h2>
                 <ul class="bullet-list compact-list">
@@ -131,7 +125,6 @@
                 </ul>
             </section>
 
-            <!-- مبادئ استراتيجية وتكتيكية (الصورة 2) -->
             <section>
                 <h2>♖ استراتيجيات وتكتيكات</h2>
                 <ul class="bullet-list">
@@ -157,7 +150,6 @@
                 </div>
             </section>
 
-            <!-- الافتتاحيات (الصورة 3 وافتتاحية سلاف من الصورة 4) -->
             <section>
                 <h2>♞ الافتتاحيات (خطوط شائعة)</h2>
 
@@ -192,7 +184,6 @@
                 </article>
             </section>
 
-            <!-- الرموز والتدوين (الصورة 4) -->
             <section>
                 <h2>📝 الرموز · التدوين</h2>
                 <div class="notation-grid">
@@ -214,7 +205,6 @@
                     <div class="notation-item"><span>خطأ فادح</span> <span class="notation-symbol">??</span></div>
                 </div>
 
-                <!-- تفاصيل إضافية من قسم الحركات -->
                 <ul style="margin-top: 1.2rem; background: #f1e8da; padding: 1rem 2rem; border-radius: 20px;">
                     <li><strong>تبييت جهة الوزير</strong> = 0-0-0 &nbsp;&nbsp;|&nbsp;&nbsp; <strong>تبييت جهة الملك</strong> = 0-0</li>
                     <li><strong>نقلة ممتازة !</strong> · <strong>نقلة رائعة !!</strong> · <strong>ضعيفة ?</strong> · <strong>سيئة !?</strong> · <strong>خطأ فادح ??</strong></li>
@@ -222,14 +212,13 @@
                 </ul>
             </section>
 
-            <!-- اسم الكاتب -->
             <div class="writer">
-                <span>✍️ نائب عبدالکریم</span>
+                <span>✍️ نافع صدام كاظم</span>
             </div>
 
             <hr>
             <div style="text-align: center; opacity: 0.7; padding: 0.5rem; font-size: 0.95rem;">
-                ♜ من أوراق مونتبيت الأصلية · ملاحظات مجمعة بـ ❤️
+                المترجم وصانع الموقع <a href="https://saaeb.netlify.app">صاعب سعد</a>
             </div>
         </main>
     </div>
